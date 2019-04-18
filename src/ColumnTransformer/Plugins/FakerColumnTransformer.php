@@ -13,7 +13,7 @@ class FakerColumnTransformer extends ColumnTransformer
 
     public static $formatterTansformerMap = [
         'name' => 'name',
-        'phoneNumber' => 'phoneNumber',
+        'phoneNumber' => 'e164PhoneNumber',
         'username' => 'username',
         'password' => 'password',
         'email' => 'email',
@@ -23,8 +23,11 @@ class FakerColumnTransformer extends ColumnTransformer
         'randomText' => 'sentence',
         'text' => 'sentence',
         'uri' => 'url',
+        'streetAddress' => 'streetAddress',
+        'postcode' => 'postcode',
+        'company' => 'company',
+        'safeEmail' => 'safeEmail'
     ];
-
 
     protected function getSupportedFormatters()
     {
